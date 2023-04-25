@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const GoBackBtn = styled.button`
+export const LoadMoreBtn = styled.button`
   display: flex;
-  gap: 12px;
+  gap: 8px;
   justify-content: center;
   align-items: center;
   min-width: 196px;
   min-height: 50px;
-  padding: 16px 16px 14px 12px;
+  padding: 14px 16px 14px 12px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;

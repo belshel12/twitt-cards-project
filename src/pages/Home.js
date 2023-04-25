@@ -1,7 +1,9 @@
+import { Title } from './TweetPages.styled';
+
 const Home = () => {
   return (
     <div>
-      <b>Hello!!!</b>
+      <Title>Welcome to the Tweets-Api Page!</Title>
     </div>
   );
 };

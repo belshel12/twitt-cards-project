@@ -5,16 +5,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 380px;
-  height: 460px;
-  background: linear-gradient(
-    114.99deg,
-    #471ca9 -0.99%,
-    #5736a3 54.28%,
-    #4b2a99 78.99%
-  );
-  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
-  border-radius: 20px;
 `;
 
 export const Logo = styled.img`
@@ -47,5 +37,48 @@ export const DataContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 62px 0 36px 0;
+  padding: 62px 0 0 0;
+`;
+
+export const AvatarContainer = styled.div`
+  position: absolute;
+  left: 150px;
+  top: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: #ebd8ff;
+  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
+    inset 0px -2.19582px 4.39163px #ae7be3,
+    inset 0px 4.39163px 3.29372px #fbf8ff;
+  border-radius: 85.9232px;
+`;
+
+export const Avatar = styled.div`
+  width: 62px;
+  height: 62px;
+  background: #5736a3;
+  border-radius: 85.9232px;
+`;
+
+export const Picture = styled.img`
+  width: 62px;
+  height: 62px;
+  border-radius: 85.9232px;
+`;
+
+export const Data = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ebd8ff;
 `;
