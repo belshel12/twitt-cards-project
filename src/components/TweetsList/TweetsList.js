@@ -17,16 +17,15 @@ export const TweetsList = ({ all, follow, following }) => {
   const [unfollowingUsers, setUnfollowingUsers] = useState([]);
   const [loadUsers, setLoadUsers] = useState(itemLoadStep);
 
-  const followingUsersId = followingUsers.map(item => item.id);
-  const subscribesUser = users.filter(
-    item => !followingUsersId.includes(item.id)
-  );
-
   useEffect(() => {
     renderUsers();
   }, []);
 
   useEffect(() => {
+    const followingUsersId = followingUsers.map(item => item.id);
+    const subscribesUser = users.filter(
+      item => !followingUsersId.includes(item.id)
+    );
     setUnfollowingUsers(subscribesUser);
   }, [users, followingUsers]);
 
